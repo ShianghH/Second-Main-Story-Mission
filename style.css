@@ -149,6 +149,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #212529;
 }
 
 img {
@@ -267,12 +268,15 @@ h1 {
   display: flex;
   justify-content: center;
 }
-.pagination-list li {
+.pagination-list li a {
   width: 48px;
   height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.pagination-list li a:hover {
+  background-color: #c0fa73;
 }
 .pagination-list .active {
   background-color: #c0fa73;
@@ -281,7 +285,8 @@ h1 {
 /* 會員促銷 */
 .member-promo {
   background-color: #e8fec5;
-  padding: 33.5px 0;
+  height: 96px;
+  display: flex;
 }
 
 .promo-inner {
@@ -290,10 +295,16 @@ h1 {
   align-items: center;
   gap: 24px;
 }
+.promo-inner p {
+  font-weight: 700;
+  font-size: 24px;
+}
+
 .btn {
   background-color: #212529;
   color: #fff;
   padding: 12px 24px;
+  border-radius: 4px;
 }
 /* 頁尾 */
 
