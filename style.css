@@ -158,6 +158,8 @@ img {
   height: auto;
 }
 
+/* 共同區塊 */
+
 /* header */
 .header {
   padding: 16px 0;
@@ -196,6 +198,54 @@ img {
   color: #57a203;
 }
 
+/* 會員促銷 */
+.member-promo {
+  background-color: #e8fec5;
+  height: 96px;
+  display: flex;
+}
+
+.promo-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.promo-inner p {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #212529;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: #57a203;
+}
+
+/* 頁尾 */
+
+.footer {
+  margin: 64px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid#DEE2E6;
+  padding-top: 32px;
+  color: #6c757d;
+}
+
+/* index.html */
 /* 麵包屑 */
 .breadcrumb {
   margin-top: 32px;
@@ -259,7 +309,7 @@ img {
   margin-bottom: 48px;
 }
 .card a:hover {
-  color: #6c757d;
+  opacity: 0.7;
 }
 .card-img {
   margin-bottom: 12px;
@@ -289,53 +339,11 @@ img {
   background-color: #c0fa73;
 }
 
-/* 會員促銷 */
-.member-promo {
-  background-color: #e8fec5;
-  height: 96px;
-  display: flex;
-}
-
-.promo-inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-.promo-inner p {
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.btn {
-  background-color: #212529;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 4px;
-}
-/* 頁尾 */
-
-.footer {
-  margin: 64px 0;
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 24px;
-}
-
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid#DEE2E6;
-  padding-top: 32px;
-  color: #6c757d;
-}
-
-/* details */
+/* details-html */
 .product-detail {
   margin: 64px 0;
 }
+/* 主要區域-左側鞋子商品 */
 .product-layout {
   display: flex;
   gap: 24px;
@@ -352,10 +360,16 @@ img {
   width: 49%;
 }
 
+/* 主要區域-右側 */
+
 .product-breadcrumb {
   display: flex;
   gap: 12px;
   margin-bottom: 12px;
+}
+
+.product-breadcrumb li a:hover {
+  color: #57a203;
 }
 
 .product-title {
@@ -390,7 +404,7 @@ h3 {
   margin-bottom: 8px;
 }
 
-/* 顏色 */
+/* 鞋子顏色 */
 
 .product-thumbnail {
   max-width: 64px;
@@ -405,11 +419,11 @@ h3 {
   align-items: center;
 }
 
-.color-item span {
-  color: #6c757d;
+.color-item a:hover {
+  opacity: 0.7;
 }
 
-/* 尺寸 */
+/* 鞋子尺寸 */
 .size-list {
   display: flex;
   flex-wrap: wrap;
@@ -514,6 +528,10 @@ h3 {
 }
 .recommend-item {
   margin-top: 16px;
+}
+
+.recommend-item a:hover {
+  opacity: 0.7;
 }
 .recommend-item img {
   margin-bottom: 12px;
